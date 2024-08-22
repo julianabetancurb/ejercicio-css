@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Básica</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ddd3da;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            background: #19131b;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            width: 100%;
+        }
+
+        .menu li {
+            display: inline-block;
+        }
+
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu li a:hover {
+            background: #fa90e0;
+        }
+
+        .box {
+            background-color: #ad7188;
+            width: 100%;
+            height: 25vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .box .content {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .boxes-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .box-item {
+            background-color: #f5dfe7;
+            flex: 1;
+            min-width: calc(50% - 20px);
+            height: 25vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 20px;
+            border: 10px solid #f28ab2; /* Borde de 10px */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra pequeña */
+            border-radius: 10px; /* Opcional: Bordes redondeados */
+        }
+
+        .box-item h1, .box-item p {
+            margin: 0 0 10px;
+        }
+
+        .box-item button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #c0a3bb;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        .box-item button:hover {
+            background-color: #fa90e0;
+        }
+
+        /* Estilos para la galería */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap; /* Permite que las imágenes se envuelvan en pantallas más pequeñas */
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 150px; /* Ajusta el tamaño deseado */
+            height: 150px; /* Asegura que las imágenes sean cuadradas */
+            object-fit: cover; /* Ajusta el contenido para cubrir el contenedor */
+            border-radius: 10px; /* Opcional: Bordes redondeados */
+            transition: transform 0.3s, box-shadow 0.3s; /* Transición suave para los efectos */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra para resaltar */
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+    <div class="box">
+        <div class="content">
+            <h1>Bienvenido al Paraíso Gatuno</h1>
+            <p>Refugio donde los gatos encuentran un hogar temporal lleno de amor y cuidados</p>
+            <p>mientras esperan encontrar su familia para siempre.</p>
+        </div>
+    </div>
+    <div class="boxes-container">
+        <div class="box-item">
+            <h1>Nuestros miembros</h1>
+            <p>Conoce a nuestros miembros gatunos</p>
+            <button>Adopta ya</button>
+        </div>
+        <div class="box-item">
+            <h1>Proceso de adopción</h1>
+            <p>Para adoptar, necesitas seguir unas reglas.</p>
+            <button>Conócelas aquí</button>
+        </div>
+    </div>
+    <div class="gallery">
+        <img src="img\gato1.jpg">
+        <img src="img\gato2.jpg" alt="Imagen 2">
+        <img src="img\gato3.jpg" alt="Imagen 3">
+        <img src="img\gato4.jpg" alt="Imagen 4">
+        <img src="img\gato5.jpg" alt="Imagen 5">
+        <img src="img\gato6.jpg" alt="Imagen 6">
+        <img src="img\gato7.jpg" alt="Imagen 7">
+    </div>
+</body>
+</html>
